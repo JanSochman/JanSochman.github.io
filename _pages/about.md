@@ -3,9 +3,9 @@ layout: about
 title: about
 permalink: /
 subtitle: <a href='http://cmp.felk.cvut.cz/'>Centre for Machine Perception</a>
-Department of Cybernetics
-Faculty of Electrical Engineering
-Czech Technical University, Prague
+# Department of Cybernetics
+# Faculty of Electrical Engineering
+# Czech Technical University, Prague
 
 profile:
   align: right
