@@ -4,6 +4,7 @@
   journal={arXiv preprint arXiv:2303.13148},
   year={2023},
   arxiv={2303.13148},
+  bibtex_show={},
   abstract={Out-of-distribution detection is a common issue in deploying vision models in practice and solving it is an essential building block in safety critical applications. Existing OOD detection solutions focus on improving the OOD robustness of a classification model trained exclusively on in-distribution (ID) data. In this work, we take a different approach and propose to leverage generic pre-trained representations. We first investigate the behaviour of simple classifiers built on top of such representations and show striking performance gains compared to the ID trained representations. We propose a novel OOD method, called GROOD, that achieves excellent performance, predicated by the use of a good generic representation. Only a trivial training process is required for adapting GROOD to a particular problem. The method is simple, general, efficient, calibrated and with only a few hyper-parameters. The method achieves state-of-the-art performance on a number of OOD benchmarks, reaching near perfect performance on several of them. The source code is available at this https URL.}
 }
 
@@ -14,6 +15,7 @@
     year      = {2021},
     pdf       = {https://www.bmvc2021-virtualconference.com/assets/papers/1500.pdf},
     code      = {https://github.com/michalneoral/Raptor},
+    bibtex_show={},
     abstract  = {We propose a method for discovery and segmentation of objects that are, or their parts are, independently moving in the scene. Given three monocular video frames, the method outputs semantically meaningful regions, i.e. regions corresponding to the whole object, even when only a part of it moves.
 The architecture of the CNN-based end-to-end method, called Raptor, combines semantic and motion backbones, which pass their outputs to a final region segmentation network. The semantic backbone is trained in a class-agnostic manner in order to generalise to object classes beyond the training data. The core of the motion branch is a geometrical cost volume computed from optical flow, optical expansion, mono-depth and the estimated camera motion.
 Evaluation of the proposed architecture on the instance motion segmentation and binary moving-static segmentation problems on KITTI, DAVIS-Moving and YTVOS-Moving datasets shows that the proposed method achieves state-of-the-art results on all the datasets and is able to generalise well to various environments. For the KITTI dataset, we provide an upgraded instance motion segmentation annotation which covers all moving objects. Dataset, code and models are available on the github project page github.com/michalneoral/Raptor.}
