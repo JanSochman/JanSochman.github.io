@@ -1,0 +1,272 @@
+@article{Ferryman2013789,
+title = "Robust abandoned object detection integrating wide area visual surveillance and social context",
+journal = "Pattern Recognition Letters",
+volume = "34",
+number = "7",
+pages = "789 - 798",
+year = "2013",
+note = "<ce:title>Scene Understanding and Behaviour Analysis</ce:title>",
+issn = "0167-8655",
+doi = "10.1016/j.patrec.2013.01.018",
+url = "http://www.sciencedirect.com/science/article/pii/S0167865513000226",
+author = "James Ferryman and David Hogg and Jan Sochman and Ardhendu Behera and José A. Rodriguez-Serrano and Simon Worgan and Longzhen Li and Valerie Leung and Murray Evans and Philippe Cornic and Stéphane Herbin and Stefan Schlenger and Michael Dose",
+keywords = "Wide area video surveillance",
+keywords = "Behaviour analysis",
+keywords = "Abandoned objects",
+abstract = "This paper presents a video surveillance framework that robustly and efficiently detects abandoned objects in surveillance scenes. The framework is based on a novel threat assessment algorithm which combines the concept of ownership with automatic understanding of social relations in order to infer abandonment of objects. Implementation is achieved through development of a logic-based inference engine based on Prolog. Threat detection performance is conducted by testing against a range of datasets describing realistic situations and demonstrates a reduction in the number of false alarms generated. The proposed system represents the approach employed in the EU SUBITO project (Surveillance of Unattended Baggage and the Identification and Tracking of the Owner)."
+}
+
+@InProceedings{MatasICRA2007,
+  author =      {Matas, Ji{\v r}{\' \i} and {\v S}ochman, Jan},
+  title =       {Wald's Sequential Analysis for Time-constrained 
+                 Vision Problems},
+  year =        {2007},
+  pages =       {10},
+  booktitle =   {IEEE International Conference on Robotics and Automation, 
+                 Workshops and Tutorials},
+  editor =      {Seth Hutchinson},
+  isbn =        {none},
+  month =       {April},
+  day =         {10-14},
+  venue =       {Roma, Italy},
+  organization ={IEEE},
+  annote = {In detection and matching problems in computer vision,
+    both classification errors and time to decision characterize the
+    quality of an algorithmic solution. We show how to formalize such
+    problems in the framework of sequential decision-making and derive
+    quasi-optimal time-constrained solutions for three vision
+    problems.
+
+    The methodology is applied to face and interest point detection
+    and to the RANSAC robust estimator. Error rates of the face
+    detector proposed algorithm are comparable to the state-of-the-art
+    methods. In the interest point application, the output of the
+    Hessian-Laplace detector [Mikolajczyk-IJCV04] is approximated by a
+    sequential WaldBoost classifier which is about five times faster
+    than the original with comparable repeatability.  A sequential
+    strategy based on Wald's SPRT for evaluation of model quality in
+    RANSAC leads to significant speed-up in geometric matching
+    problems.},
+  keywords =    {sequential analysis, WaldBoost, RANSAC, interest points},
+  note =        {CDROM, invited paper},
+}
+@InProceedings{Neoral2018,
+  author    = {Michal Neoral and Jan {\v S}ochman and Jiri Matas},
+  title     = {Continual Occlusions and Optical Flow Estimation},
+  booktitle = {ACCV},
+  year      = {2018}
+}@InProceedings{Neoral2017,
+  author    = {Michal Neoral and Jan Sochman},
+  title     = {Object Scene Flow with Temporal Consistency},
+  booktitle = {22nd Computer Vision Winter Workshop},
+  year      = {2017}
+}
+This file was created with JabRef 2.1.
+Encoding: ISO8859_1
+
+@INPROCEEDINGS{Sochman-accv2007,
+  author = {{\v S}ochman, Jan and Matas, Ji{\v r}{\' \i}},
+  title = {Learning A Fast Emulator of a Binary Decision Process},
+  booktitle = {ACCV},
+  year = {2007},
+  editor = {Yasushi Yagi and Sing Bing Kang and In So Kweon and Hongbin Zha},
+  volume = {II},
+  pages = {236--245},
+  address = {Berlin Heidelberg},
+  publisher = {Springer},
+  series = {LNSC},
+  isbn = {978-3-540-76389-5},
+  abstract = {Computation time is an important performance characteristic of computer
+	vision algorithms. This paper shows how existing (slow) binary-valued
+	decision algorithms can be approximated by a trained WaldBoost classifier,
+	which minimises the decision time while guaranteeing predefined approximation
+	precision. The core idea is to take an existing algorithm as a black
+	box performing some useful binary decision task and to train the
+	WaldBoost classifier as its emulator.
+	
+	
+	 Two interest point detectors, Hessian-Laplace and Kadir-Brady saliency
+	detector, are emulated to demonstrate the approach. The experiments
+	show similar repeatability and matching score of the original and
+	emulated algorithms while achieving a 70-fold speed-up for Kadir-Brady
+	detector.}
+}
+
+@InProceedings{Sochman-AFGR:2004,
+  author =      {{\v S}ochman, Jan and Matas, Ji{\v r}{\'\i}},
+  title =       {{AdaBoost} with Totally Corrective Updates for Fast 
+                 Face Detection},
+  year =        {2004},
+  pages =       {445--450},
+  booktitle =   {FGR '04: Proceeding of the Sixth IEEE International
+                 Conference on Automatic Face and Gesture Recognition},
+  editor =      {Deeber Azada},
+  publisher =   {IEEE Computer Society},
+  address =     {10662 Los Vaqueros Circle, P.O.Box 3014, Los Alamitos, USA},
+  isbn =        {0-7695-2122-3},
+  book_pages =  {904},
+  month =       {May},
+  day =         {17--19},
+  venue =       {Center for Artificial Vision Research, 
+                 Korea University, Jamsil Hotel, Seoul, Korea South},
+  organization ={IEEE Computer Society; Korea Information Science
+    Society; Korea Science and Engineering Foundation; Ministry of
+    Information and Communication, Korea; US Air Force Office of
+    Scientific Research; WatchVision, Inc.},
+  annote = {An extension of the AdaBoost learning algorithm is
+    proposed and brought to bear on the face detection problem. In
+    each weak classifier selection cycle, the novel totally corrective
+    algorithm reduces aggressively the upper bound on the training
+    error by correcting coefficients of all weak classifiers. The
+    correction steps are proven to lower the upper bound on the error
+    without increasing computational complexity of the resulting
+    detector. We show experimentally that for the face detection
+    problem, where large training sets are available, the technique
+    does not overfit.
+      A cascaded face detector of the Viola-Jones type is built using
+    AdaBoost with the Totally Corrective Update. The same detection
+    and false positive rates are achieved with a detector that is
+    20 perc. faster and consists of only a quarter of the weak
+    classifiers needed for a classifier trained by standard
+    AdaBoost. The latter property facilitates hardware implementation,
+    the former opens scope for the increase in the search space,
+    e.g. the range of scales at which faces are sought.},
+  keywords =    {AdaBoost, face detection, computer vision},
+}
+@InProceedings{sochman-waldboost-cvpr05,
+author =      {{\v S}ochman, Jan and Matas, Ji{\v r}{\' \i}},
+title =       {WaldBoost  - Learning for Time Constrained Sequential Detection},
+booktitle =   {Proc. of Conference on Computer Vision and Pattern Recognition (CVPR)},
+address =     {Los Alamitos, USA} ,
+year =        {2005},
+month =       {June},
+day =         {20--25},
+isbn        = {0-7695-2372-2},
+publisher   = {IEEE Computer Society},
+book_pages  = {1219},
+pages    =    {150--157},
+annote = { In many computer vision classification problems, both the
+  error and time characterizes the quality of a decision. We show that
+  such problems can be formalized in the framework of sequential
+  decision-making. If the false positive and false negative error
+  rates are given, the optimal strategy in terms of the shortest
+  average time to decision (number of measurements used) is the Wald's
+  sequential probability ratio test (SPRT).  We built on the optimal
+  SPRT test and enlarge its capabilities to problems with dependent
+  measurements. We show, how the limitations of SPRT to a priori
+  ordered measurements and known joint probability density functions
+  can be overcome. We propose an algorithm with near optimal time -
+  error rate trade-off, called WaldBoost, which integrates the
+  AdaBoost algorithm for measurement selection and ordering and the
+  joint probability density estimation with the optimal SPRT decision
+  strategy.  The WaldBoost algorithm is tested on the face detection
+  problem. The results are superior to the state-of-the-art methods in
+  average evaluation time and comparable in detection rates.  },
+keywords =    {Adaboost, cascade, Wald's SPRT, sequential analysis, face detection},
+editor      = {Schmid, Cordelia and Soatto, Stefano and Tomasi, Carlo},
+venue       = {San Diego, California, USA  },
+volume      = { 2 },
+}
+@inproceedings{Terzic2010
+  author    = {Kasim Terzic and
+               Lothar Hotz and
+               Jan Sochman},
+  title     = {Interpreting Structures in Man-made Scenes - Combining Low-Level
+               and High-Level Structure Sources},
+  booktitle = {ICAART (1)},
+  year      = {2010},
+  pages     = {357--364},
+  crossref  = {DBLP:conf/icaart/2010-1},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}@InProceedings{Sochman-ICPR-2004,
+  author =      {{\v S}ochman, Jan and Matas, Ji{\v r}{\'\i}},
+  title =       {Inter-stage Feature Propagation in Cascade Building with {AdaBoost}},
+  year =        {2004},
+  pages =       {236--239},
+  booktitle =   {Proceedings of ICPR 2004 17th International Conference on
+                 Pattern Recognition},
+  editor =      {Josef Kittler, Maria Petrou, Mark Nixon},
+  publisher =   {IEEE Computer Society},
+  address =     {10662 Los Vaqueros Circle, P.O.Box 3014, Los Alamitos, USA},
+  isbn =        {0-7695-2128-2},
+  volume =      {1},
+  book_pages =  {840},
+  month =       {August},
+  day =         {23--26},
+  venue =       {IAPR, Cambridge, UK},
+  organization ={IEEE},
+  annote = {A modification of the cascaded detector with the AdaBoost
+    trained stage classifiers is proposed and brought to bear on the
+    face detection problem. The cascaded detector is a sequential
+    classifier with the ability of early rejection of easy
+    samples. Each decision in the sequence is made by a separately
+    trained classifier, a stage classifier. In proposed modification
+    the features from one stage of training are propagated to the next
+    stage classifier.  The proposed intra-stage feature propagation is
+    shown to be greedily optimal, does not increase computational
+    complexity of the stage classifier and leads to shorter stage
+    classifiers and accordingly to faster detectors.
+  
+    A cascaded face detector is built with the intra-stage feature
+    propagation and is compared with the Viola and Jones approach. The
+    same detection and false positive rates are achieved with a
+    detector that is 25 perc. faster and consists of only two thirds of
+    the weak classifiers needed for a cascade trained by the Viola and
+    Jones approach. The latter property facilitates hardware
+    implementation, the former opens scope for the increase in the
+    search space, e.g. the range of scales at which faces are
+    sought.},
+  keywords =    {AdaBoost, face detection, computer vision},
+}@INPROCEEDINGS{Grabner2008,
+  author = {Grabner, H. and {\v S}ochman, J. and Bischof, H. and Matas, J.},
+  title = {Training Sequential On-line Boosting Classifier for Visual Tracking},
+  booktitle = {ICPR},
+  year = {2008},
+  abstract = {On-line boosting allows to adapt a trained classifier
+to changing environmental conditions or to use sequentially
+available training data. Yet, two important problems
+in the on-line boosting training remain unsolved:
+(i) classifier evaluation speed optimization and, (ii) automatic
+classifier complexity estimation. In this paper
+we show how the on-line boosting can be combined with
+Wald's sequential decision theory to solve both of the
+problems.
+
+The properties of the proposed on-line WaldBoost algorithm
+are demonstrated on a visual tracking problem.
+The complexity of the classifier is changing dynamically
+depending on the difficulty of the problem. On average,
+a speedup of a factor of 5-10 is achieved compared to
+the non-sequential on-line boosting.}
+}@ARTICLE{Sochman2009,
+  author = {Jan {\v S}ochman and Ji{\v r}{\'\i} Matas},
+  title = {Learning Fast Emulators of Binary Decision Processes},
+  journal = {International Journal of Computer Vision},
+  year = {2009},
+  volume = {83},
+  pages = {149--163},
+  number = {2},
+  month = {June},
+  abstract = {Computation time is an important performance characteristic of computer
+	vision algorithms. The paper shows how existing (slow) binary decision
+	algorithms can be approximated by a (fast) trained WaldBoost classifier.
+	WaldBoost learning minimises the decision time of the classifier
+	while guaranteeing predefined precision. We show that the WaldBoost
+	algorithm together with bootstrapping is able to efficiently handle
+	an effectively unlimited number of training examples provided by
+	the implementation of the approximated algorithm.
+	
+	
+	Two interest point detectors, the Hessian-Laplace and the Kadir-Brady
+	saliency detectors, are emulated to demonstrate the approach. Experiments
+	show that while the repeatability and matching scores are similar
+	for the original and emulated algorithms, a 9-fold speed-up for
+	the Hessian-Laplace detector and a 142-fold speed-up for the Kadir-Brady
+	detector is achieved. For the Hessian-Laplace detector, the achieved
+	speed is similar to SURF, a popular and very fast handcrafted modification
+	of Hessian-Laplace; the WaldBoost emulator approximates the output
+	of the Hessian-Laplace detector more precisely.},
+  doi = {10.1007/s11263-009-0229-x},
+  keywords = {Boosting, AdaBoost, Sequential probability ratio test, Sequential
+	decision making, WaldBoost, Interest point detectors, Machine learning}
+}
