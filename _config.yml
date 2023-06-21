@@ -269,7 +269,7 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Sochman, {\v S}ochman]
+  last_name: [Sochman]
   first_name: [Jan, J.]
 
   style: apa
