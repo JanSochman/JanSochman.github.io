@@ -25,11 +25,13 @@ Evaluation of the proposed architecture on the instance motion segmentation and 
 @InProceedings{Neoral2018,
   author    = {Michal Neoral and Jan {\v S}ochman and Jiri Matas},
   title     = {Continual Occlusions and Optical Flow Estimation},
-  booktitle = {ACCV},
+  booktitle={Asian Conference on Computer Vision},
   pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-030-20870-7_10.pdf},
+  pages={159--174},
   arxiv     = {1811.01602},
   bibtex_show = {},
   year      = {2018},
+  organization={Springer},
   abstract  = {Two optical flow estimation problems are addressed: (i)
 occlusion estimation and handling, and (ii) estimation from image
 sequences longer than two frames. The proposed ContinualFlow method
@@ -49,6 +51,20 @@ and Sintel.}
   author    = {Michal Neoral and Jan Sochman},
   title     = {Object Scene Flow with Temporal Consistency},
   booktitle = {22nd Computer Vision Winter Workshop},
+  pdf       = {neoral_cvww2017.pdf},
+  abstract  = {In this paper, we propose several improvements of the Object Scene Flow (OSF) algorithm [14]. The OSF does not use the scene flow
+estimated in previous frame nor the object labels and
+their corresponding object motion information. The
+goal of this paper is to use this information in order
+to produce temporarily consistent output throughout
+the whole video sequence. We evaluate the progress
+on the KITTI’15 multiframe dataset. We show that
+propagating the labels and the corresponding motion information using the estimated flow reduces the
+false negative rate (missed cars). Together with two
+further proposed improvements the overall reduction
+of false negative is 42\%. The proposed improvements
+also reduce EPE on the KITTI’15 scene flow from
+10.63\% to 9.65\%.},
   year      = {2017}
 }
 
