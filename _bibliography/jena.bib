@@ -22,6 +22,35 @@ The architecture of the CNN-based end-to-end method, called Raptor, combines sem
 Evaluation of the proposed architecture on the instance motion segmentation and binary moving-static segmentation problems on KITTI, DAVIS-Moving and YTVOS-Moving datasets shows that the proposed method achieves state-of-the-art results on all the datasets and is able to generalise well to various environments. For the KITTI dataset, we provide an upgraded instance motion segmentation annotation which covers all moving objects. Dataset, code and models are available on the github project page github.com/michalneoral/Raptor.}
     }
 
+@InProceedings{Neoral2018,
+  author    = {Michal Neoral and Jan {\v S}ochman and Jiri Matas},
+  title     = {Continual Occlusions and Optical Flow Estimation},
+  booktitle = {ACCV},
+  pdf       = {https://link.springer.com/content/pdf/10.1007/978-3-030-20870-7_10.pdf},
+  arxiv     = {1811.01602},
+  bibtex_show = {},
+  year      = {2018},
+  abstract  = {Two optical flow estimation problems are addressed: (i)
+occlusion estimation and handling, and (ii) estimation from image
+sequences longer than two frames. The proposed ContinualFlow method
+estimates occlusions before flow, avoiding the use of flow corrupted by
+occlusions for their estimation. We show that providing occlusion masks
+as an additional input to flow estimation improves the standard performance metric by more than 25\% on both KITTI and Sintel. As a
+second contribution, a novel method for incorporating information from
+past frames into flow estimation is introduced. The previous frame flow
+serves as an input to occlusion estimation and as a prior in occluded
+regions, i.e. those without visual correspondences. By continually using
+the previous frame flow, ContinualFlow performance improves further by
+18\% on KITTI and 7\% on Sintel, achieving top performance on KITTI
+and Sintel.}
+}
+
+@InProceedings{Neoral2017,
+  author    = {Michal Neoral and Jan Sochman},
+  title     = {Object Scene Flow with Temporal Consistency},
+  booktitle = {22nd Computer Vision Winter Workshop},
+  year      = {2017}
+}
 
 @article{Ferryman2013789,
 title = "Robust abandoned object detection integrating wide area visual surveillance and social context",
@@ -76,20 +105,6 @@ abstract = "This paper presents a video surveillance framework that robustly and
   note =        {CDROM, invited paper},
 }
 
-@InProceedings{Neoral2018,
-  author    = {Michal Neoral and Jan {\v S}ochman and Jiri Matas},
-  title     = {Continual Occlusions and Optical Flow Estimation},
-  booktitle = {ACCV},
-  year      = {2018}
-
-}
-
-@InProceedings{Neoral2017,
-  author    = {Michal Neoral and Jan Sochman},
-  title     = {Object Scene Flow with Temporal Consistency},
-  booktitle = {22nd Computer Vision Winter Workshop},
-  year      = {2017}
-}
 This file was created with JabRef 2.1.
 Encoding: ISO8859_1
 
