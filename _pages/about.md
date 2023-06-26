@@ -14,7 +14,8 @@ profile:
   address: >
     <p>office: KN-G203</p>
     <p>Karlovo namesti 13</p>
-    <p>121 35, Praha 2, Czech Republic</p>
+    <p>121 35, Praha 2</p>
+    <p>Czech Republic</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -32,3 +33,7 @@ Researcher at [Centre for Machine Perception](http://cmp.felk.cvut.cz/), [Depart
 **Teaching**
   * Pattern Recognition ([en](https://cw.fel.cvut.cz/wiki/courses/be5b33rpz/start)/[cz](https://cw.fel.cvut.cz/wiki/courses/b4b33rpz/start))
   * [Deep Learning](https://cw.fel.cvut.cz/wiki/courses/bev033dle/start)
+  
+**Misc**
+  * [Photos](https://flickr.com/jenovo/albums)
+  * [Tales](https://jenovo.wordpress.com/) (mostly in Czech)
