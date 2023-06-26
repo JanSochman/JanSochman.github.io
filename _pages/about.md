@@ -22,6 +22,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a researcher at Centre for Machine Perception, Department of Cybernetics, Faculty of Electrical Engineering of Czech Technical University in Prague.
+Researcher at [Centre for Machine Perception](http://cmp.felk.cvut.cz/), [Department of Cybernetics](http://cyber.felk.cvut.cz/), [Faculty of Electrical Engineering](http://www.feld.cvut.cz/en/) of [Czech Technical University in Prague](http://www.cvut.cz/).
 
-My main interests are in machine learning: out-of-distribution detection, motion analysis, biologically inspired learning.
+**Research interests**
+  * out-of-distribution detection
+  * motion analysis
+  * biologically inspired learning
+  
+**Teaching**
+  * Pattern Recognition ([en](https://cw.fel.cvut.cz/wiki/courses/be5b33rpz/start)/[cz](https://cw.fel.cvut.cz/wiki/courses/b4b33rpz/start))
+  * [Deep Learning](https://cw.fel.cvut.cz/wiki/courses/bev033dle/start)
