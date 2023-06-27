@@ -25,7 +25,7 @@ social: true  # includes social icons at the bottom of the page
 
 Researcher at [Centre for Machine Perception](http://cmp.felk.cvut.cz/), [Department of Cybernetics](http://cyber.felk.cvut.cz/), [Faculty of Electrical Engineering](http://www.feld.cvut.cz/en/) of [Czech Technical University in Prague](http://www.cvut.cz/).
 
-**Research interests**
+**Current research interests**
   * out-of-distribution detection
   * motion analysis
   * biologically inspired learning

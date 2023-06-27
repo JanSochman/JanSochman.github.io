@@ -7,7 +7,8 @@
   doi={10.48550/arXiv.2303.13148},
   bibtex_show={},
   code={https://github.com/vojirt/GROOD},
-  abstract={Out-of-distribution detection is a common issue in deploying vision models in practice and solving it is an essential building block in safety critical applications. Existing OOD detection solutions focus on improving the OOD robustness of a classification model trained exclusively on in-distribution (ID) data. In this work, we take a different approach and propose to leverage generic pre-trained representations. We first investigate the behaviour of simple classifiers built on top of such representations and show striking performance gains compared to the ID trained representations. We propose a novel OOD method, called GROOD, that achieves excellent performance, predicated by the use of a good generic representation. Only a trivial training process is required for adapting GROOD to a particular problem. The method is simple, general, efficient, calibrated and with only a few hyper-parameters. The method achieves state-of-the-art performance on a number of OOD benchmarks, reaching near perfect performance on several of them. The source code is available at this https URL.}
+  abstract={Out-of-distribution detection is a common issue in deploying vision models in practice and solving it is an essential building block in safety critical applications. Existing OOD detection solutions focus on improving the OOD robustness of a classification model trained exclusively on in-distribution (ID) data. In this work, we take a different approach and propose to leverage generic pre-trained representations. We first investigate the behaviour of simple classifiers built on top of such representations and show striking performance gains compared to the ID trained representations. We propose a novel OOD method, called GROOD, that achieves excellent performance, predicated by the use of a good generic representation. Only a trivial training process is required for adapting GROOD to a particular problem. The method is simple, general, efficient, calibrated and with only a few hyper-parameters. The method achieves state-of-the-art performance on a number of OOD benchmarks, reaching near perfect performance on several of them. The source code is available at this https URL.},
+  preview={grood.jpg}
 }
 
 @InProceedings{Neoral2021,
@@ -20,7 +21,8 @@
     bibtex_show={},
     abstract  = {We propose a method for discovery and segmentation of objects that are, or their parts are, independently moving in the scene. Given three monocular video frames, the method outputs semantically meaningful regions, i.e. regions corresponding to the whole object, even when only a part of it moves.
 The architecture of the CNN-based end-to-end method, called Raptor, combines semantic and motion backbones, which pass their outputs to a final region segmentation network. The semantic backbone is trained in a class-agnostic manner in order to generalise to object classes beyond the training data. The core of the motion branch is a geometrical cost volume computed from optical flow, optical expansion, mono-depth and the estimated camera motion.
-Evaluation of the proposed architecture on the instance motion segmentation and binary moving-static segmentation problems on KITTI, DAVIS-Moving and YTVOS-Moving datasets shows that the proposed method achieves state-of-the-art results on all the datasets and is able to generalise well to various environments. For the KITTI dataset, we provide an upgraded instance motion segmentation annotation which covers all moving objects. Dataset, code and models are available on the github project page github.com/michalneoral/Raptor.}
+Evaluation of the proposed architecture on the instance motion segmentation and binary moving-static segmentation problems on KITTI, DAVIS-Moving and YTVOS-Moving datasets shows that the proposed method achieves state-of-the-art results on all the datasets and is able to generalise well to various environments. For the KITTI dataset, we provide an upgraded instance motion segmentation annotation which covers all moving objects. Dataset, code and models are available on the github project page github.com/michalneoral/Raptor.},
+preview={raptor.jpg}
     }
 
 @InProceedings{Neoral2018,
@@ -45,7 +47,8 @@ serves as an input to occlusion estimation and as a prior in occluded
 regions, i.e. those without visual correspondences. By continually using
 the previous frame flow, ContinualFlow performance improves further by
 18\% on KITTI and 7\% on Sintel, achieving top performance on KITTI
-and Sintel.}
+and Sintel.},
+preview={contflow.jpg}
 }
 
 @InProceedings{Neoral2017,
@@ -88,6 +91,7 @@ keywords = "Abandoned objects",
 abstract = "This paper presents a video surveillance framework that robustly and efficiently detects abandoned objects in surveillance scenes. The framework is based on a novel threat assessment algorithm which combines the concept of ownership with automatic understanding of social relations in order to infer abandonment of objects. Implementation is achieved through development of a logic-based inference engine based on Prolog. Threat detection performance is conducted by testing against a range of datasets describing realistic situations and demonstrates a reduction in the number of false alarms generated. The proposed system represents the approach employed in the EU SUBITO project (Surveillance of Unattended Baggage and the Identification and Tracking of the Owner).",
 bibtex_show = {},
 pdf = {ferryman-prl2013.pdf},
+preview = {social.jpg}
 }
 
 @INPROCEEDINGS{Sochman-accv2007,
@@ -320,6 +324,5 @@ the non-sequential on-line boosting.},
 	decision making, WaldBoost, Interest point detectors, Machine learning},
   bibtex_show = {},
   pdf = {sochman-ijcv09.pdf},
-  preview = {emulator.jpg}
   preview = {emulator_ijcv.jpg}
 }
