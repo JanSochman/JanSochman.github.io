@@ -1,0 +1,15 @@
+ml Ruby binutils
+export PATH=$PATH:/home.zam/sochmj1/.gem/ruby/3.0.0/bin
+cd personal/homepage/JanSochman.github.io/
+
+To run the local server:
+  ~/.gem/ruby/3.0.0/bin/bundler exec jekyll serve
+
+And from the notebook open the tunnel:
+  ssh -N -L localhost:4000:localhost:4000 sochmj1@meyer.felk.cvut.cz
+and go to localhost:4000 in the browser.
+
+Every edit of the code will be synchronised automatically.
+
+To deploy, run:
+  bin/deploy --user
