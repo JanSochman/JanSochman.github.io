@@ -16,6 +16,7 @@ profile:
     <p>Karlovo namesti 13</p>
     <p>121 35, Praha 2</p>
     <p>Czech Republic</p>
+    <p>jan.sochman(at)fel.cvut.cz</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

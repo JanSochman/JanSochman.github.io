@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 # description: Selected publications in reversed chronological order.
-years: [2023, 2021, 2018, 2013, 2010, 2009, 2008, 2007, 2005]
+years: [2024, 2023, 2021, 2018, 2013, 2010, 2009, 2008, 2007, 2005]
 nav: true
 nav_order: 1
 ---
