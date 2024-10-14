@@ -153,8 +153,10 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="http://arxiv.org/abs/2405.19882" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07720.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
             <a href="https://github.com/vojirt/PixOOD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
           
@@ -163,7 +165,11 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden bibtex block -->
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We propose a dense image prediction out-of-distribution detection algorithm, called PixOOD, which does not require training on samples of anomalous data and is not designed for a specific application which avoids traditional training biases. In order to model the complex intra-class variability of the in-distribution data at the pixel level, we propose an online data condensation algorithm which is more robust than standard K-means and is easily trainable through SGD. We evaluate PixOOD on a wide range of problems. It achieved state-of-the-art results on four out of seven datasets, while being competitive on the rest.</p>
+          </div>
+<!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">vojir2024pixood</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{PixOOD: Pixel-Level Out-of-Distribution Detection}</span><span class="p">,</span>
