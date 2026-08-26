@@ -36,7 +36,7 @@ latest_posts:
 
 I am a researcher at [Centre for Machine Perception](http://cmp.felk.cvut.cz/) at [Czech Technical University in Prague](http://www.cvut.cz/).
 
-I finished my Ph.D. in 2009 on the topic of _learning for sequential classification_ advised by prof. [Jiří Matas](https://cmp.felk.cvut.cz/~matas/). I spent a year and half as a postdoc at the [Computer Vision Group](https://artificial-intelligence.leeds.ac.uk/computer-vision/), University of Leeds, UK, where I worked with prof. [David Hogg](https://eps.leeds.ac.uk/computing/staff/84/professor-david-hogg) on the [SUBITO](https://cordis.europa.eu/project/id/218004) European project. I have been part of several other EU projects and I spent more than ten years cooperating with Toyota Motor Europe.
+I finished my Ph.D. in 2009 on the topic of _Learning for sequential classification_ advised by prof. [Jiří Matas](https://cmp.felk.cvut.cz/~matas/). I spent a year and half as a postdoc at the [Computer Vision Group](https://artificial-intelligence.leeds.ac.uk/computer-vision/), University of Leeds, UK, where I worked with prof. [David Hogg](https://eps.leeds.ac.uk/computing/staff/84/professor-david-hogg) on the [SUBITO](https://cordis.europa.eu/project/id/218004) European project. I have been part of several other EU projects since and I spent more than ten years cooperating with Toyota Motor Europe.
 
 **Current research interests**
   * continual reinforcement learning

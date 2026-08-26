@@ -4,7 +4,7 @@ permalink: /misc/
 title: misc
 description: Miscellaneous resources and personal staff
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
   * [Photos](https://flickr.com/jenovo/albums)
