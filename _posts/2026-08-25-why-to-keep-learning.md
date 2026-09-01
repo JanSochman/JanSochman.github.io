@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Why to Keep Learning
+title: Why Keep Learning?
 # description: an example of a distill-style blog post and main elements
 tags: continual-learning, curiosity, plasticity, stability
 giscus_comments: false
@@ -50,17 +50,17 @@ _styles: >
 
 I have spent most of my machine learning research career studying (self-)supervised problems of
 various complexity and I feel quite competent there after so many years. In this post I would like to
-introduce you my new interest, which turns some of my usual assumptions upside-down. Let me tell you why I
+introduce you to my new interest, which turns some of my usual assumptions upside-down. Let me tell you why I
 started to like the continual learning problem.
 
 *Let's assume a set of independent and identically distributed (i.i.d.) measurements...* If you have
 ever built an algorithm for classification or regression, deep or shallow, trained end-to-end or
 partially hand-crafted, you have most likely started with this assumption in mind. And it is a
 useful assumption. It allows us to use all available statistical methods and results developed over
-centuries and apply them directly to our problem. And thanks to that we were able to solve many
+centuries and apply them directly to our problem. Thanks to that we were able to solve many
 real-world problems using machine learning.
 
-*We have a new production line and your algorithm fails to detect...* And maybe you have already met
+*We have a new production line and your algorithm fails to detect...* Maybe you have already met
 a real-life situation where the i.i.d. assumption failed. In practice, if you develop for instance a
 handwriting recognition system there is a good chance that it will not work well for a subset of
 users. We call such data points out-of-distribution (OOD) samples -- they are from a different
@@ -71,12 +71,12 @@ papers<d-cite key="vojir2023calibrated,PixOOD_TPAMI2026"></d-cite>.
 Obviously, the i.i.d. assumption is just a useful simplification of the real-world. When we are
 careful, it is a good one and it opens a wide range of useful methods for solving the problem. Yet,
 it is a simplification only. Think of degrading optics in cameras, unexpected change of lighting,
-shift in language statistics over time, new products introduced, ... What should we do about all
+shift in language statistics over time, new products introduced... What should we do about all
 these cases? Well, let's build a "world model" or an LLM with all the data in the world in the
 training set! Right? By collecting all possible samples we are reducing the chance of meeting an OOD
 sample.
 
-But, is it really necessary? And is it the best option?
+But, is it really necessary? Is it the best option?
 
 Let me look at the problem from yet another angle. With the i.i.d. assumption we expect all the training data as
 well as every test sample to come from the same (usually unknown) distribution. The aforementioned
@@ -92,7 +92,7 @@ But wait, there is a solution to this problem which works magic and everybody us
 imitation learning<d-cite key="imitation-survey-2024"></d-cite>. Similarly to what we do when
 training LLMs, we collect trajectories in the problem space (e.g. a robot arm performing some task)
 from human operators, save them in a training set and train the agent to behave similarly. Voilà, we
-are back in the i.i.d. case with i.i.d. training set and if we are careful, also the test cases from
+are back in the i.i.d. case with i.i.d. training set, and if we are careful, also the test cases from
 the same distribution.
 
 Right? Problem solved! Or maybe there is another way? Maybe there are consequences of this
@@ -101,19 +101,19 @@ key="alvinn1988"></d-cite>...
 
 What I would like to argue for in this post is that, yes, we are able to train very powerful
 models, but maybe while overly focusing on one particular simplification, we are missing a chance to
-study the model's **ability to adapt**, to keep learning. Something, which is very natural to us
+study the model's **ability to adapt**, to keep learning. Something which is very natural to us
 humans. 
 
 We are not forgetting it completely, there is some research on continual learning<d-cite
-key="cl-survey-2024"></d-cite>, but remove clear task boundaries, limit the memory for replay and
-fix the model size and you arrive at quite difficult task for today's algorithms, so called online
+key="cl-survey-2024"></d-cite>, but remove clear task boundaries, limit the memory for replay, 
+fix the model size and you arrive at a quite difficult task for today's algorithms, so called online
 continual learning. I have been testing some of the relevant CL state-of-the-art algorithms and so
-far I have not found any, which would be convincing enough for me. Yet, I do find this setup
+far I have not found any which would be convincing enough for me. Yet, I do find this setup
 interesting and very important. 
 
 I think that removing the separation of the test phase from the training is the key for
 really intelligent systems, which are able to continuously adapt with new information and
-(hopefully) not to forget everything learned before. I do not see the adaptation as an ex-post
+(hopefully) not forget everything learned before. I do not see the adaptation as an ex-post
 process, but as a necessary ingredient of every inference/training. I do not have a solution to this
 problem yet, but I would like to share with you three ingredients I find important in these problems
 -- curiosity, plasticity, and (in)stability.
@@ -139,17 +139,17 @@ inside the training loop. In RL, the methods attempting to distinguish these two
 space are often referred to as curiosity-driven. They are trying to spend the random exploration
 compute more on the unknown than the known, at least to some extent.
 
-There is a whole set of approaches defining some curiosity signal. I am not going into detail here.
+There is a whole set of approaches defining some curiosity signal. I will not go into detail here.
 One may achieve better scores on difficult exploratory problems (e.g. games with very sparse
 reward)<d-cite key="ngu2020"></d-cite>. It is possible to ignore part of the signal the agent cannot
-influence (TV-noise problem)<d-cite key="rnd2019"></d-cite>. And there is even some evidence that
+influence (TV-noise problem)<d-cite key="rnd2019"></d-cite>. There is even some evidence that
 the approaches are often complementary, so combining several of
 them is better than using just one<d-cite key="rlexplore2025"></d-cite>. 
 Curiosity also adds an extra non-stationarity to the training. So one has to be extra careful when
 adding it to one's approach.
 
 For me, the most important aspect of curiosity is that it allows training with continuously changing
-distributions. Without search for novel, it is easy to feel cozy with the already known strategy.
+distributions. Without searching for novelty, it is easy to feel cozy with the already known strategy.
 
 ## Plasticity
 
@@ -160,7 +160,7 @@ is different. We may scale up the models as we wish, but the collection of the d
 non i.i.d. and typically limited by the number of interactions we are able to perform. Most RL
 methods, even non-continual, thus keep their models rather small.
 
-But, wouldn't it be nice if we could use big models with all their capacity and would not need to
+Wouldn't it be nice if we could use big models with all their capacity and would not need to
 worry about overfitting? 
 
 With enough capacity in our model, maybe we could avoid catastrophic forgetting<d-cite
@@ -168,11 +168,11 @@ key="catastrophic-interference-1989"></d-cite>, i.e. overwriting the capabilitie
 tasks just because we are learning something new. And maybe we could also avoid primacy
 bias<d-cite key="primacy-bias-2022"></d-cite>, the tendency to learn well (overfit) early on and lose the
 ability to adapt later on because of the weights being too big and difficult to change with small
-gradients. Both of these are two sides of model plasticity. Both, too plastic and not plastic
-enough, could be bad. What we are looking for is balance. 
+gradients. Both of these are two sides of model plasticity. Both too plastic and not plastic
+enough could be bad. What we are looking for is balance. 
 
 Recently, I have found an interesting middle ground alternative, local plasticity<d-cite
-key="elephant-2025"></d-cite>. The paper achieves this by employing activation function with not
+key="elephant-2025"></d-cite>. The paper achieves this by employing an activation function with not
 only sparse activations (like ReLU), but also sparse gradients. The paper does not seem to scale too
 well to large architectures, but that may change with future iterations. Below is a figure
 from the paper demonstrating what happens to a neural network updated by a single new data point
@@ -191,7 +191,7 @@ But the real question is: Does RL actually work?
 
 The most striking difference to the i.i.d. setup for a fresh RL practitioner is the training
 instability. With all the distribution shifts, sparse rewards and complex training algorithms trying
-to handle that, it is often quite challenging to tame the training numerically. I believe, this is
+to handle that, it is often quite challenging to tame the training numerically. I believe this is
 the main reason people often say "RL does not work". They have tried, changed something and it does
 not work. I have been there many times too. For this reason, the RL community has built a
 set of stable baselines<d-cite key="stable-baselines3"></d-cite>, which tend to work in many cases.
@@ -206,5 +206,5 @@ to add something to this one day even in the continual learning setup with its e
 --
 
 Let me stop here, even though there is, of course, much more to continual learning. The curiosity,
-plasticity and (in)stability aspects are just three of many I do find interesting at the moment.  I
-am sure, I will return to this topic in another post later on as I will keep learning.
+plasticity and (in)stability aspects are just three of many I find interesting at the moment.  I
+am sure I will return to this topic in another post later on as I will keep learning.
