@@ -76,7 +76,7 @@ these cases? Well, let's build a "world model" or an LLM with all the data in th
 training set! Right? By collecting all possible samples we are reducing the chance of meeting an OOD
 sample.
 
-But, is it really necessary? Is it the best option?
+But, is it really necessary? And is it the best option?
 
 Let me look at the problem from yet another angle. With the i.i.d. assumption we expect all the training data as
 well as every test sample to come from the same (usually unknown) distribution. The aforementioned
